@@ -6,6 +6,7 @@ public class Grading {
 	 */
 	public static void main(String[] args) {
 
+		System.out.println("ì‹œì‘í•©ë‹ˆë‹¤.");
 		int[][] students = {
 					{ 1, 3, 2, 4, 3, 1, 4, 2, 2, 1 },
 					{ 3, 2, 4, 2, 2, 1, 1, 3, 4, 1 },
@@ -18,7 +19,7 @@ public class Grading {
 		int score = 10;
 				
 		if(args.length != 10){
-			System.out.println("Á¤´äÀÇ °³¼ö°¡ ¸ÂÁö ¾Ê½À´Ï´Ù.");
+			System.out.println("ì •ë‹µì˜ ê°œìˆ˜ê°€ ë§ì§€ ì•ŠìŠµë‹ˆë‹¤.");
 			return;
 		}
 
@@ -27,12 +28,12 @@ public class Grading {
 				solve[i] = Integer.parseInt(args[i]);
 			}
 		}catch(Exception e){
-			System.out.println("¿¹¿Ü ¹ß»ı! ¼ıÀÚ¸¸ ³ÖÀ¸¼¼¿©");
+			System.out.println("ì˜ˆì™¸ ë°œìƒ! ìˆ«ìë§Œ ë„£ìœ¼ì„¸ì—¬");
 			return;
 		}
 		
 		for(int i = 0; i < students.length; i ++){
-			System.out.print("ÇĞ»ı " + (i + 1) + "ÀÇ Á¤¿ÀÇ¥: ");
+			System.out.print("í•™ìƒ " + (i + 1) + "ì˜ ì •ì˜¤í‘œ: ");
 			for(int j = 0; j < solve.length; j++){
 				if(students[i][j] == solve[j] ){
 				   scores[i] +=  score;
@@ -42,7 +43,7 @@ public class Grading {
 				}
 			}
 			System.out.println("");
-			System.out.println("ÇĞ»ı " + (i+1) + "ÀÇ Á¡¼ö : " + scores[i]);
+			System.out.println("í•™ìƒ " + (i+1) + "ì˜ ì ìˆ˜ : " + scores[i]);
 			
 		}
 		
